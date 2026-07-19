@@ -36,5 +36,197 @@ tr:nth-child(even) { background: #f5f5f5; }</style>
 <i data-path-to-node="19,0,0" data-index-in-node="27">(Hôm nay, cùng nhau ăn trưa không?)</i></p></li></ul><p data-path-to-node="20"><b data-path-to-node="20" data-index-in-node="0">Câu 2: Dịch câu sau sang tiếng Nhật (Sử dụng mẫu ～ましょう)</b></p><ul data-path-to-node="21"><li><p data-path-to-node="21,0,0">"Chúng ta cùng uống cà phê ở cửa hàng kia nhé."
 <i data-path-to-node="21,0,0" data-index-in-node="48">(Gợi ý: Cửa hàng kia = あの店 - ano mise)</i></p></li></ul><p data-path-to-node="22"><b data-path-to-node="22" data-index-in-node="0">Câu 3: Chọn đáp án đúng nhất (Dựa vào sắc thái)</b></p><ul data-path-to-node="23"><li><p data-path-to-node="23,0,0">Khi muốn mời sếp đi ăn, câu nào phù hợp hơn?</p><ul data-path-to-node="23,0,1"><li><p data-path-to-node="23,0,1,0,0">a) 食べませんか (Tabemasen ka?)</p></li><li><p data-path-to-node="23,0,1,1,0">b) 食べましょう (Tabemashou?)</p></li><li><p data-path-to-node="23,0,1,2,0"><i data-path-to-node="23,0,1,2,0" data-index-in-node="0">Giải thích lý do tại sao?</i></p></li></ul></li></ul><p data-path-to-node="24"><b data-path-to-node="24" data-index-in-node="0">Câu 4: Nghe hiểu (Tự kiểm tra)</b></p><ul data-path-to-node="25"><li><p data-path-to-node="25,0,0">Nếu nghe thấy câu: 「あした、映画を見ませんか。」, bạn sẽ trả lời là đồng ý bằng cách nào để nghe tự nhiên nhất?</p></li></ul><p data-path-to-node="27"><b data-path-to-node="27" data-index-in-node="0">Tôi đã sẵn sàng nhận câu trả lời của bạn. Hãy gửi đáp án, tôi sẽ chấm điểm và chỉnh sửa chi tiết cho bạn ngay!</b></p></div></div>
   <a class="back" href="index.html">← Quay lại danh sách</a>
+
+
+
+<!-- NAV-BAR-V2 -->
+<style>
+#askcpl-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 48px;
+}
+#askcpl-nav button {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+#askcpl-nav button:hover:not([disabled]) {
+  background: rgba(255,255,255,0.3);
+}
+#askcpl-nav button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+#askcpl-nav-title {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e0d0ff;
+}
+#askcpl-nav-title:hover {
+  background: rgba(255,255,255,0.15);
+}
+#askcpl-toc {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e1e2e;
+  border: 1px solid rgba(167,139,250,0.3);
+  border-radius: 10px;
+  padding: 8px 4px;
+  min-width: 340px;
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 9998;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+#askcpl-toc::-webkit-scrollbar { width: 6px; }
+#askcpl-toc::-webkit-scrollbar-track { background: transparent; }
+#askcpl-toc::-webkit-scrollbar-thumb { background: rgba(167,139,250,0.3); border-radius: 3px; }
+.nav-toc-item {
+  display: block;
+  padding: 7px 16px;
+  color: #a0a0c0;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 1px 4px;
+  font-size: 13px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-toc-item:hover {
+  background: rgba(167,139,250,0.15);
+  color: #e0d0ff;
+}
+.nav-toc-current {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+#askcpl-nav-home {
+  background: rgba(46,160,67,0.3);
+  text-decoration: none;
+  border: 1px solid rgba(46,160,67,0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+#askcpl-nav-home:hover { background: rgba(46,160,67,0.5); }
+body { padding-top: 52px !important; }
+</style>
+
+<div id="askcpl-nav">
+  <button id="nav-prev" onclick="askcplNav(-1)" >&#9664; Prev</button>
+  <a id="askcpl-nav-home" href="index.html#day-104" title="Quay lại danh sách tổng">🏠 Menu</a>
+  <span id="askcpl-nav-title" onclick="askcplToggleToc()" title="Click xem Mục Lục">
+    Day 104 / 2500 &nbsp;&#9660;
+  </span>
+  <button id="nav-next" onclick="askcplNav(1)" >Next &#9654;</button>
+</div>
+
+<div id="askcpl-toc">
+<a class="nav-toc-item" href="day_94.html">Day 94 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_95.html">Day 95 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_96.html">Day 96 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_97.html">Day 97 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_98.html">Day 98 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_99.html">Day 99 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_100.html">Day 100 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_101.html">Day 101 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_102.html">Day 102 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_103.html">Day 103 — Gemini Japan</a>
+<a class="nav-toc-item nav-toc-current" href="day_104.html">Day 104 — Gemini Japan ←</a>
+<a class="nav-toc-item" href="day_105.html">Day 105 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_106.html">Day 106 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_107.html">Day 107 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_108.html">Day 108 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_109.html">Day 109 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_110.html">Day 110 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_111.html">Day 111 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_112.html">Day 112 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_113.html">Day 113 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_114.html">Day 114 — Gemini Japan</a>
+
+</div>
+
+<script>
+(function() {
+  var CURRENT_DAY = 104;
+  var TOTAL_DAYS = 2500;
+  var tocOpen = false;
+
+  window.askcplNav = function(delta) {
+    var next = CURRENT_DAY + delta;
+    if (next < 1 || next > TOTAL_DAYS) return;
+    window.location.href = 'day_' + next + '.html';
+  };
+
+  window.askcplToggleToc = function() {
+    var toc = document.getElementById('askcpl-toc');
+    tocOpen = !tocOpen;
+    toc.style.display = tocOpen ? 'block' : 'none';
+    if (tocOpen) {
+      var cur = toc.querySelector('.nav-toc-current');
+      if (cur) cur.scrollIntoView({block: 'center'});
+    }
+  };
+
+  document.addEventListener('click', function(e) {
+    var nav = document.getElementById('askcpl-nav');
+    var toc = document.getElementById('askcpl-toc');
+    if (toc && !nav.contains(e.target) && !toc.contains(e.target)) {
+      toc.style.display = 'none';
+      tocOpen = false;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') askcplNav(-1);
+    if (e.key === 'ArrowRight') askcplNav(1);
+    if (e.key === 'Escape') {
+      document.getElementById('askcpl-toc').style.display = 'none';
+      tocOpen = false;
+    }
+  });
+})();
+</script>
+<!-- END-NAV-BAR-V2 -->
 </body>
 </html>

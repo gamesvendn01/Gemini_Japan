@@ -32,5 +32,197 @@ tr:nth-child(even) { background: #f5f5f5; }</style>
 (Ima, ame ga futte imasu.)
 <i data-path-to-node="15,2,0" data-index-in-node="39">Bây giờ, trời đang mưa.</i></p></li></ol><h3 data-path-to-node="17">3. Lỗi sai phổ biến của người Việt</h3><ul data-path-to-node="18"><li><p data-path-to-node="18,0,0"><b data-path-to-node="18,0,0" data-index-in-node="0">Lỗi nhầm lẫn giữa Nhóm 1 và Nhóm 2:</b> Người học thường quên quy tắc của Nhóm 1 và áp dụng bừa bãi "bỏ masu thêm te" cho cả nhóm này.</p></li><li><p data-path-to-node="18,1,0"><b data-path-to-node="18,1,0" data-index-in-node="0">Cách khắc phục:</b> Hãy luôn nhớ: "Nếu không thuộc nhóm 3 và không có đuôi <code data-path-to-node="18,1,0" data-index-in-node="71">eru/iru</code> (nhóm 2), hãy tra bảng nhóm 1".</p></li><li><p data-path-to-node="18,2,0"><b data-path-to-node="18,2,0" data-index-in-node="0">Lỗi phát âm:</b> Nhầm lẫn giữa <code data-path-to-node="18,2,0" data-index-in-node="27">～て</code> (te) và <code data-path-to-node="18,2,0" data-index-in-node="38">～で</code> (de). Trong tiếng Việt không có phụ âm đôi như <code data-path-to-node="18,2,0" data-index-in-node="88">tte</code> hay <code data-path-to-node="18,2,0" data-index-in-node="96">nde</code>, hãy chú ý ngắt nhịp (âm ngắt) thật rõ ràng.</p></li></ul><h3 data-path-to-node="20">4. Bài tập thực hành (Làm ngay nhé!)</h3><p data-path-to-node="21">Hãy chia các động từ sau sang <b data-path-to-node="21" data-index-in-node="30">Thể TE</b>:</p><ol start="1" data-path-to-node="22"><li><p data-path-to-node="22,0,0">待ちます (Machimasu - Đợi): ________</p></li><li><p data-path-to-node="22,1,0">読みます (Yomimasu - Đọc): ________</p></li><li><p data-path-to-node="22,2,0">置きます (Okimasu - Đặt/Để): ________</p></li><li><p data-path-to-node="22,3,0">教えます (Oshiemasu - Dạy): ________</p></li><li><p data-path-to-node="22,4,0">行きます (Ikimasu - Đi): ________</p></li></ol><p data-path-to-node="23"><b data-path-to-node="23" data-index-in-node="0">Tôi đang đợi câu trả lời của bạn để chấm điểm đây!</b></p></div></div>
   <a class="back" href="index.html">← Quay lại danh sách</a>
+
+
+
+<!-- NAV-BAR-V2 -->
+<style>
+#askcpl-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 48px;
+}
+#askcpl-nav button {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+#askcpl-nav button:hover:not([disabled]) {
+  background: rgba(255,255,255,0.3);
+}
+#askcpl-nav button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+#askcpl-nav-title {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e0d0ff;
+}
+#askcpl-nav-title:hover {
+  background: rgba(255,255,255,0.15);
+}
+#askcpl-toc {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e1e2e;
+  border: 1px solid rgba(167,139,250,0.3);
+  border-radius: 10px;
+  padding: 8px 4px;
+  min-width: 340px;
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 9998;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+#askcpl-toc::-webkit-scrollbar { width: 6px; }
+#askcpl-toc::-webkit-scrollbar-track { background: transparent; }
+#askcpl-toc::-webkit-scrollbar-thumb { background: rgba(167,139,250,0.3); border-radius: 3px; }
+.nav-toc-item {
+  display: block;
+  padding: 7px 16px;
+  color: #a0a0c0;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 1px 4px;
+  font-size: 13px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-toc-item:hover {
+  background: rgba(167,139,250,0.15);
+  color: #e0d0ff;
+}
+.nav-toc-current {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+#askcpl-nav-home {
+  background: rgba(46,160,67,0.3);
+  text-decoration: none;
+  border: 1px solid rgba(46,160,67,0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+#askcpl-nav-home:hover { background: rgba(46,160,67,0.5); }
+body { padding-top: 52px !important; }
+</style>
+
+<div id="askcpl-nav">
+  <button id="nav-prev" onclick="askcplNav(-1)" >&#9664; Prev</button>
+  <a id="askcpl-nav-home" href="index.html#day-149" title="Quay lại danh sách tổng">🏠 Menu</a>
+  <span id="askcpl-nav-title" onclick="askcplToggleToc()" title="Click xem Mục Lục">
+    Day 149 / 2500 &nbsp;&#9660;
+  </span>
+  <button id="nav-next" onclick="askcplNav(1)" >Next &#9654;</button>
+</div>
+
+<div id="askcpl-toc">
+<a class="nav-toc-item" href="day_139.html">Day 139 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_140.html">Day 140 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_141.html">Day 141 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_142.html">Day 142 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_143.html">Day 143 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_144.html">Day 144 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_145.html">Day 145 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_146.html">Day 146 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_147.html">Day 147 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_148.html">Day 148 — Gemini Japan</a>
+<a class="nav-toc-item nav-toc-current" href="day_149.html">Day 149 — Gemini Japan ←</a>
+<a class="nav-toc-item" href="day_150.html">Day 150 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_151.html">Day 151 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_152.html">Day 152 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_153.html">Day 153 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_154.html">Day 154 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_155.html">Day 155 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_156.html">Day 156 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_157.html">Day 157 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_158.html">Day 158 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_159.html">Day 159 — Gemini Japan</a>
+
+</div>
+
+<script>
+(function() {
+  var CURRENT_DAY = 149;
+  var TOTAL_DAYS = 2500;
+  var tocOpen = false;
+
+  window.askcplNav = function(delta) {
+    var next = CURRENT_DAY + delta;
+    if (next < 1 || next > TOTAL_DAYS) return;
+    window.location.href = 'day_' + next + '.html';
+  };
+
+  window.askcplToggleToc = function() {
+    var toc = document.getElementById('askcpl-toc');
+    tocOpen = !tocOpen;
+    toc.style.display = tocOpen ? 'block' : 'none';
+    if (tocOpen) {
+      var cur = toc.querySelector('.nav-toc-current');
+      if (cur) cur.scrollIntoView({block: 'center'});
+    }
+  };
+
+  document.addEventListener('click', function(e) {
+    var nav = document.getElementById('askcpl-nav');
+    var toc = document.getElementById('askcpl-toc');
+    if (toc && !nav.contains(e.target) && !toc.contains(e.target)) {
+      toc.style.display = 'none';
+      tocOpen = false;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') askcplNav(-1);
+    if (e.key === 'ArrowRight') askcplNav(1);
+    if (e.key === 'Escape') {
+      document.getElementById('askcpl-toc').style.display = 'none';
+      tocOpen = false;
+    }
+  });
+})();
+</script>
+<!-- END-NAV-BAR-V2 -->
 </body>
 </html>

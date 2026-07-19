@@ -34,5 +34,197 @@ B. 作る (Tsukuru)
 C. 作った (Tsukutta)</p><p data-path-to-node="22"><b data-path-to-node="22" data-index-in-node="0">Câu 3 (Viết đoạn văn ngắn):</b>
 Hãy viết một đoạn văn (khoảng 3-4 câu) về một việc bạn đã làm để nâng cao trình độ tiếng Nhật trong tuần qua. (Sử dụng cấu trúc: <i data-path-to-node="22" data-index-in-node="157">~te iru, ~noda, ~youni shite iru</i>).</p><p data-path-to-node="24"><b data-path-to-node="24" data-index-in-node="0">Mời bạn gửi đáp án, tôi sẽ chỉnh sửa chi tiết và giải thích lý do cho bạn!</b></p></div></div>
   <a class="back" href="index.html">← Quay lại danh sách</a>
+
+
+
+<!-- NAV-BAR-V2 -->
+<style>
+#askcpl-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 48px;
+}
+#askcpl-nav button {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+#askcpl-nav button:hover:not([disabled]) {
+  background: rgba(255,255,255,0.3);
+}
+#askcpl-nav button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+#askcpl-nav-title {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e0d0ff;
+}
+#askcpl-nav-title:hover {
+  background: rgba(255,255,255,0.15);
+}
+#askcpl-toc {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e1e2e;
+  border: 1px solid rgba(167,139,250,0.3);
+  border-radius: 10px;
+  padding: 8px 4px;
+  min-width: 340px;
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 9998;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+#askcpl-toc::-webkit-scrollbar { width: 6px; }
+#askcpl-toc::-webkit-scrollbar-track { background: transparent; }
+#askcpl-toc::-webkit-scrollbar-thumb { background: rgba(167,139,250,0.3); border-radius: 3px; }
+.nav-toc-item {
+  display: block;
+  padding: 7px 16px;
+  color: #a0a0c0;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 1px 4px;
+  font-size: 13px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-toc-item:hover {
+  background: rgba(167,139,250,0.15);
+  color: #e0d0ff;
+}
+.nav-toc-current {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+#askcpl-nav-home {
+  background: rgba(46,160,67,0.3);
+  text-decoration: none;
+  border: 1px solid rgba(46,160,67,0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+#askcpl-nav-home:hover { background: rgba(46,160,67,0.5); }
+body { padding-top: 52px !important; }
+</style>
+
+<div id="askcpl-nav">
+  <button id="nav-prev" onclick="askcplNav(-1)" >&#9664; Prev</button>
+  <a id="askcpl-nav-home" href="index.html#day-971" title="Quay lại danh sách tổng">🏠 Menu</a>
+  <span id="askcpl-nav-title" onclick="askcplToggleToc()" title="Click xem Mục Lục">
+    Day 971 / 2500 &nbsp;&#9660;
+  </span>
+  <button id="nav-next" onclick="askcplNav(1)" >Next &#9654;</button>
+</div>
+
+<div id="askcpl-toc">
+<a class="nav-toc-item" href="day_961.html">Day 961 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_962.html">Day 962 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_963.html">Day 963 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_964.html">Day 964 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_965.html">Day 965 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_966.html">Day 966 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_967.html">Day 967 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_968.html">Day 968 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_969.html">Day 969 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_970.html">Day 970 — Gemini Japan</a>
+<a class="nav-toc-item nav-toc-current" href="day_971.html">Day 971 — Gemini Japan ←</a>
+<a class="nav-toc-item" href="day_972.html">Day 972 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_973.html">Day 973 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_974.html">Day 974 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_975.html">Day 975 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_976.html">Day 976 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_977.html">Day 977 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_978.html">Day 978 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_979.html">Day 979 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_980.html">Day 980 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_981.html">Day 981 — Gemini Japan</a>
+
+</div>
+
+<script>
+(function() {
+  var CURRENT_DAY = 971;
+  var TOTAL_DAYS = 2500;
+  var tocOpen = false;
+
+  window.askcplNav = function(delta) {
+    var next = CURRENT_DAY + delta;
+    if (next < 1 || next > TOTAL_DAYS) return;
+    window.location.href = 'day_' + next + '.html';
+  };
+
+  window.askcplToggleToc = function() {
+    var toc = document.getElementById('askcpl-toc');
+    tocOpen = !tocOpen;
+    toc.style.display = tocOpen ? 'block' : 'none';
+    if (tocOpen) {
+      var cur = toc.querySelector('.nav-toc-current');
+      if (cur) cur.scrollIntoView({block: 'center'});
+    }
+  };
+
+  document.addEventListener('click', function(e) {
+    var nav = document.getElementById('askcpl-nav');
+    var toc = document.getElementById('askcpl-toc');
+    if (toc && !nav.contains(e.target) && !toc.contains(e.target)) {
+      toc.style.display = 'none';
+      tocOpen = false;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') askcplNav(-1);
+    if (e.key === 'ArrowRight') askcplNav(1);
+    if (e.key === 'Escape') {
+      document.getElementById('askcpl-toc').style.display = 'none';
+      tocOpen = false;
+    }
+  });
+})();
+</script>
+<!-- END-NAV-BAR-V2 -->
 </body>
 </html>

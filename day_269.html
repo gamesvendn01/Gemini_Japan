@@ -31,5 +31,197 @@ Sếp nói với bạn: <code data-path-to-node="20" data-index-in-node="43">「
 Hành động nào sau đây là đúng?</p><ul data-path-to-node="21"><li><p data-path-to-node="21,0,0">A. Đợi đến ngày mai khi cuộc họp bắt đầu thì đi photo 30 bản.</p></li><li><p data-path-to-node="21,1,0">B. Phải photo sẵn 30 bản tài liệu này ngay từ hôm nay để chuẩn bị cho ngày mai.</p></li></ul><p data-path-to-node="22"><b data-path-to-node="22" data-index-in-node="0">Câu 3 (Dịch nghĩa cụm từ siêu thị):</b>
 Dịch câu sau sang tiếng Việt: <code data-path-to-node="22" data-index-in-node="66">「本日に限り、全品1割引き（いちわりびき）です。」</code></p><p data-path-to-node="24"><b data-path-to-node="24" data-index-in-node="0">Hãy để lại câu trả lời của bạn (Ví dụ: 1-A, 2-B, 3-...) để mình check xem khả năng bắt từ khóa của bạn đến đâu nhé!</b></p></div></div>
   <a class="back" href="index.html">← Quay lại danh sách</a>
+
+
+
+<!-- NAV-BAR-V2 -->
+<style>
+#askcpl-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 48px;
+}
+#askcpl-nav button {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+#askcpl-nav button:hover:not([disabled]) {
+  background: rgba(255,255,255,0.3);
+}
+#askcpl-nav button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+#askcpl-nav-title {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e0d0ff;
+}
+#askcpl-nav-title:hover {
+  background: rgba(255,255,255,0.15);
+}
+#askcpl-toc {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e1e2e;
+  border: 1px solid rgba(167,139,250,0.3);
+  border-radius: 10px;
+  padding: 8px 4px;
+  min-width: 340px;
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 9998;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+#askcpl-toc::-webkit-scrollbar { width: 6px; }
+#askcpl-toc::-webkit-scrollbar-track { background: transparent; }
+#askcpl-toc::-webkit-scrollbar-thumb { background: rgba(167,139,250,0.3); border-radius: 3px; }
+.nav-toc-item {
+  display: block;
+  padding: 7px 16px;
+  color: #a0a0c0;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 1px 4px;
+  font-size: 13px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-toc-item:hover {
+  background: rgba(167,139,250,0.15);
+  color: #e0d0ff;
+}
+.nav-toc-current {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+#askcpl-nav-home {
+  background: rgba(46,160,67,0.3);
+  text-decoration: none;
+  border: 1px solid rgba(46,160,67,0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+#askcpl-nav-home:hover { background: rgba(46,160,67,0.5); }
+body { padding-top: 52px !important; }
+</style>
+
+<div id="askcpl-nav">
+  <button id="nav-prev" onclick="askcplNav(-1)" >&#9664; Prev</button>
+  <a id="askcpl-nav-home" href="index.html#day-269" title="Quay lại danh sách tổng">🏠 Menu</a>
+  <span id="askcpl-nav-title" onclick="askcplToggleToc()" title="Click xem Mục Lục">
+    Day 269 / 2500 &nbsp;&#9660;
+  </span>
+  <button id="nav-next" onclick="askcplNav(1)" >Next &#9654;</button>
+</div>
+
+<div id="askcpl-toc">
+<a class="nav-toc-item" href="day_259.html">Day 259 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_260.html">Day 260 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_261.html">Day 261 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_262.html">Day 262 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_263.html">Day 263 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_264.html">Day 264 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_265.html">Day 265 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_266.html">Day 266 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_267.html">Day 267 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_268.html">Day 268 — Gemini Japan</a>
+<a class="nav-toc-item nav-toc-current" href="day_269.html">Day 269 — Gemini Japan ←</a>
+<a class="nav-toc-item" href="day_270.html">Day 270 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_271.html">Day 271 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_272.html">Day 272 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_273.html">Day 273 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_274.html">Day 274 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_275.html">Day 275 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_276.html">Day 276 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_277.html">Day 277 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_278.html">Day 278 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_279.html">Day 279 — Gemini Japan</a>
+
+</div>
+
+<script>
+(function() {
+  var CURRENT_DAY = 269;
+  var TOTAL_DAYS = 2500;
+  var tocOpen = false;
+
+  window.askcplNav = function(delta) {
+    var next = CURRENT_DAY + delta;
+    if (next < 1 || next > TOTAL_DAYS) return;
+    window.location.href = 'day_' + next + '.html';
+  };
+
+  window.askcplToggleToc = function() {
+    var toc = document.getElementById('askcpl-toc');
+    tocOpen = !tocOpen;
+    toc.style.display = tocOpen ? 'block' : 'none';
+    if (tocOpen) {
+      var cur = toc.querySelector('.nav-toc-current');
+      if (cur) cur.scrollIntoView({block: 'center'});
+    }
+  };
+
+  document.addEventListener('click', function(e) {
+    var nav = document.getElementById('askcpl-nav');
+    var toc = document.getElementById('askcpl-toc');
+    if (toc && !nav.contains(e.target) && !toc.contains(e.target)) {
+      toc.style.display = 'none';
+      tocOpen = false;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') askcplNav(-1);
+    if (e.key === 'ArrowRight') askcplNav(1);
+    if (e.key === 'Escape') {
+      document.getElementById('askcpl-toc').style.display = 'none';
+      tocOpen = false;
+    }
+  });
+})();
+</script>
+<!-- END-NAV-BAR-V2 -->
 </body>
 </html>

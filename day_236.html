@@ -29,5 +29,197 @@ tr:nth-child(even) { background: #f5f5f5; }</style>
 "Hôm qua, tôi đã gặp bạn tôi là anh Tanaka. Anh Tanaka nói rằng anh ấy đã mua một cuốn sách mới. Cuốn sách đó rất thú vị và dễ đọc. Nhưng vì không có thời gian nên tôi mới chỉ đọc được một nửa. Tuần sau, tôi định sẽ gặp lại anh Tanaka."</p><h3 data-path-to-node="12">2. Lỗi sai phổ biến của người Việt</h3><p data-path-to-node="13"><b data-path-to-node="13" data-index-in-node="0">Lỗi sai:</b> Nhầm lẫn giữa "Thể ngắn" và "Thể lịch sự" khi viết văn.</p><ul data-path-to-node="14"><li><p data-path-to-node="14,0,0"><b data-path-to-node="14,0,0" data-index-in-node="0">Biểu hiện:</b> Nhiều bạn khi viết bài văn/nhật ký vẫn dùng <code data-path-to-node="14,0,0" data-index-in-node="55">~ます/です</code> xen lẫn với thể ngắn <code data-path-to-node="14,0,0" data-index-in-node="83">~た/る</code>. Điều này làm câu văn bị "vênh" về phong cách.</p></li><li><p data-path-to-node="14,1,0"><b data-path-to-node="14,1,0" data-index-in-node="0">Cách khắc phục:</b> Quy tắc vàng là <b data-path-to-node="14,1,0" data-index-in-node="32">"Nhất quán"</b>. Nếu chọn phong cách kể chuyện (văn viết), hãy kết thúc tất cả các câu bằng thể ngắn (tạ/ru). Nếu là thư gửi cấp trên, hãy dùng toàn bộ thể lịch sự (masu/desu). Đừng trộn lẫn!</p></li></ul><h3 data-path-to-node="16">3. Bài tập thực hành (Hãy làm ngay nhé!)</h3><p data-path-to-node="17">Bạn hãy thực hiện các bài tập sau để kiểm tra khả năng chuyển đổi thể thông thường:</p><p data-path-to-node="18"><b data-path-to-node="18" data-index-in-node="0">Bài 1: Chuyển các câu sau sang thể thông thường (Plain form):</b></p><ol start="1" data-path-to-node="19"><li><p data-path-to-node="19,0,0">今日は学校へ行きます。 (Kyou wa gakkou e ikimasu.)</p></li><li><p data-path-to-node="19,1,0">昨日は寒かったです。 (Kinou wa samukatta desu.)</p></li><li><p data-path-to-node="19,2,0">この料理はおいしくないです。 (Kono ryouri wa oishikunai desu.)</p></li><li><p data-path-to-node="19,3,0">彼は学生ではありません。 (Kare wa gakusei dewa arimasen.)</p></li></ol><p data-path-to-node="20"><b data-path-to-node="20" data-index-in-node="0">Bài 2: Đọc hiểu nhanh</b>
 Dựa vào đoạn văn mẫu ở mục 1, trả lời câu hỏi sau (bằng tiếng Việt):</p><ul data-path-to-node="21"><li><p data-path-to-node="21,0,0">Tại sao người viết mới chỉ đọc được một nửa cuốn sách?</p></li></ul><p data-path-to-node="23"><b data-path-to-node="23" data-index-in-node="0">Tôi đang đợi câu trả lời của bạn để chấm điểm và chữa bài chi tiết!</b></p></div></div>
   <a class="back" href="index.html">← Quay lại danh sách</a>
+
+
+
+<!-- NAV-BAR-V2 -->
+<style>
+#askcpl-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 48px;
+}
+#askcpl-nav button {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+#askcpl-nav button:hover:not([disabled]) {
+  background: rgba(255,255,255,0.3);
+}
+#askcpl-nav button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+#askcpl-nav-title {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e0d0ff;
+}
+#askcpl-nav-title:hover {
+  background: rgba(255,255,255,0.15);
+}
+#askcpl-toc {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e1e2e;
+  border: 1px solid rgba(167,139,250,0.3);
+  border-radius: 10px;
+  padding: 8px 4px;
+  min-width: 340px;
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 9998;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+#askcpl-toc::-webkit-scrollbar { width: 6px; }
+#askcpl-toc::-webkit-scrollbar-track { background: transparent; }
+#askcpl-toc::-webkit-scrollbar-thumb { background: rgba(167,139,250,0.3); border-radius: 3px; }
+.nav-toc-item {
+  display: block;
+  padding: 7px 16px;
+  color: #a0a0c0;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 1px 4px;
+  font-size: 13px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-toc-item:hover {
+  background: rgba(167,139,250,0.15);
+  color: #e0d0ff;
+}
+.nav-toc-current {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+#askcpl-nav-home {
+  background: rgba(46,160,67,0.3);
+  text-decoration: none;
+  border: 1px solid rgba(46,160,67,0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+#askcpl-nav-home:hover { background: rgba(46,160,67,0.5); }
+body { padding-top: 52px !important; }
+</style>
+
+<div id="askcpl-nav">
+  <button id="nav-prev" onclick="askcplNav(-1)" >&#9664; Prev</button>
+  <a id="askcpl-nav-home" href="index.html#day-236" title="Quay lại danh sách tổng">🏠 Menu</a>
+  <span id="askcpl-nav-title" onclick="askcplToggleToc()" title="Click xem Mục Lục">
+    Day 236 / 2500 &nbsp;&#9660;
+  </span>
+  <button id="nav-next" onclick="askcplNav(1)" >Next &#9654;</button>
+</div>
+
+<div id="askcpl-toc">
+<a class="nav-toc-item" href="day_226.html">Day 226 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_227.html">Day 227 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_228.html">Day 228 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_229.html">Day 229 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_230.html">Day 230 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_231.html">Day 231 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_232.html">Day 232 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_233.html">Day 233 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_234.html">Day 234 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_235.html">Day 235 — Gemini Japan</a>
+<a class="nav-toc-item nav-toc-current" href="day_236.html">Day 236 — Gemini Japan ←</a>
+<a class="nav-toc-item" href="day_237.html">Day 237 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_238.html">Day 238 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_239.html">Day 239 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_240.html">Day 240 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_241.html">Day 241 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_242.html">Day 242 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_243.html">Day 243 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_244.html">Day 244 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_245.html">Day 245 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_246.html">Day 246 — Gemini Japan</a>
+
+</div>
+
+<script>
+(function() {
+  var CURRENT_DAY = 236;
+  var TOTAL_DAYS = 2500;
+  var tocOpen = false;
+
+  window.askcplNav = function(delta) {
+    var next = CURRENT_DAY + delta;
+    if (next < 1 || next > TOTAL_DAYS) return;
+    window.location.href = 'day_' + next + '.html';
+  };
+
+  window.askcplToggleToc = function() {
+    var toc = document.getElementById('askcpl-toc');
+    tocOpen = !tocOpen;
+    toc.style.display = tocOpen ? 'block' : 'none';
+    if (tocOpen) {
+      var cur = toc.querySelector('.nav-toc-current');
+      if (cur) cur.scrollIntoView({block: 'center'});
+    }
+  };
+
+  document.addEventListener('click', function(e) {
+    var nav = document.getElementById('askcpl-nav');
+    var toc = document.getElementById('askcpl-toc');
+    if (toc && !nav.contains(e.target) && !toc.contains(e.target)) {
+      toc.style.display = 'none';
+      tocOpen = false;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') askcplNav(-1);
+    if (e.key === 'ArrowRight') askcplNav(1);
+    if (e.key === 'Escape') {
+      document.getElementById('askcpl-toc').style.display = 'none';
+      tocOpen = false;
+    }
+  });
+})();
+</script>
+<!-- END-NAV-BAR-V2 -->
 </body>
 </html>

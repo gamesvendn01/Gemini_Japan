@@ -1,0 +1,26 @@
+{
+  "1231.html": [
+    {
+      "type": "wysiwyg",
+      "html": "<p><a href=\"attachments/generate_tam_linh_chanh_niem_roadmap.py\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: white; background-color: rgb(46, 160, 67);\"><strong>📄 Tải xuống file đính kèm: generate_tam_linh_chanh_niem_roadmap.py</strong></a></p><p><br></p>"
+    }
+  ],
+  "123.html": [
+    {
+      "type": "wysiwyg",
+      "html": "<p>123123 <a href=\"attachments/generate_chinese_roadmap.py\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: white; background-color: rgb(46, 160, 67);\"><strong>📄 Tải xuống file đính kèm: generate_chinese_roadmap.py</strong></a></p><p><br></p>"
+    }
+  ],
+  "day_1 exercise.html": [
+    {
+      "type": "wysiwyg",
+      "html": "<p>Giải bài tập</p><p><strong>Bài 1: Nhìn chữ đoán âm (Chuyển các chữ Hiragana sau sang Romaji)</strong></p><p><br></p><ol><li>あい =&gt; AI</li><li>うえ =&gt; Ue</li><li>あお=&gt; AO</li></ol><p><strong style=\"color: rgb(26, 26, 26);\">Bài 2: Phân biệt mặt chữ</strong><span style=\"color: rgb(26, 26, 26);\"> 4. Trong hai chữ sau, chữ nào là chữ </span><strong style=\"color: rgb(26, 26, 26);\">O (お)</strong><span style=\"color: rgb(26, 26, 26);\">? A. あ B. お</span></p><p>Đáp án là B</p><p><strong style=\"color: rgb(26, 26, 26);\">Bài 3: Tìm từ</strong><span style=\"color: rgb(26, 26, 26);\"> 5. Từ \"Biển\" trong tiếng Nhật (Umi) được ghép từ hai chữ cái nào trong hàng A? Viết lại bằng chữ Hiragana.</span></p><p>うみ</p>"
+    }
+  ],
+  "day_2 exercise.html": [
+    {
+      "type": "wysiwyg",
+      "html": "<p><strong>Phần 1: Chuyển các từ Romaji sau sang chữ Hiragana:</strong></p><p><br></p><ol><li>ka s a (Cái ô) =&gt; かさ</li><li>a s h i (Cái chân) あし</li><li>s u k i (Thích)　すき</li></ol><p><strong>Phần 2: Đọc các chữ Hiragana sau và đoán xem nó là từ gì (Gõ lại bằng Romaji hoặc nghĩa tiếng Việt):</strong></p><p>4. そこ ＝＞ so ko ( ở đó)</p><p>5. おかし =&gt;　o ka shi ( kẹo)</p>"
+    }
+  ]
+}

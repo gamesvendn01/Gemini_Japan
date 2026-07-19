@@ -35,5 +35,197 @@ B.</span><span class="pending"> はい、</span><span class="pending">分かり�
 C.</span><span class="pending"> もちろん、</span><span class="pending">喜んで！ (Tất nhiên rồi,</span><span class="pending"> rất sẵn lòng!</span><span class="pending">)</span></p><p data-path-to-node="19" class="pending"><b data-path-to-node="19" data-index-in-node="0" class="pending">Câu 3 (Dịch ý ẩn ý):</b><span class="pending">
 Khi đối phương nói:</span><span class="pending"> </span><code data-path-to-node="19" data-index-in-node="41" class="pending">「明日、空いてますか？」(Ngày mai bạn rảnh không?)</code><span class="pending"> trong bối cảnh rủ đi chơi,</span><span class="pending"> tại sao người Nhật không nói thẳng "Đi chơi với tôi nhé"?</span><i data-path-to-node="19" data-index-in-node="165" class="pending">Gợi ý: Liên quan đến sự e dè và giữ thể diện (haji).</i></p><p data-path-to-node="21" class="pending"><b data-path-to-node="21" data-index-in-node="0" class="pending">Tôi đang đợi câu trả lời của bạn để chấm điểm và phân tích sâu hơn!</b></p></div></div>
   <a class="back" href="index.html">← Quay lại danh sách</a>
+
+
+
+<!-- NAV-BAR-V2 -->
+<style>
+#askcpl-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 48px;
+}
+#askcpl-nav button {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+#askcpl-nav button:hover:not([disabled]) {
+  background: rgba(255,255,255,0.3);
+}
+#askcpl-nav button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+#askcpl-nav-title {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e0d0ff;
+}
+#askcpl-nav-title:hover {
+  background: rgba(255,255,255,0.15);
+}
+#askcpl-toc {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e1e2e;
+  border: 1px solid rgba(167,139,250,0.3);
+  border-radius: 10px;
+  padding: 8px 4px;
+  min-width: 340px;
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 9998;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+#askcpl-toc::-webkit-scrollbar { width: 6px; }
+#askcpl-toc::-webkit-scrollbar-track { background: transparent; }
+#askcpl-toc::-webkit-scrollbar-thumb { background: rgba(167,139,250,0.3); border-radius: 3px; }
+.nav-toc-item {
+  display: block;
+  padding: 7px 16px;
+  color: #a0a0c0;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 1px 4px;
+  font-size: 13px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-toc-item:hover {
+  background: rgba(167,139,250,0.15);
+  color: #e0d0ff;
+}
+.nav-toc-current {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+#askcpl-nav-home {
+  background: rgba(46,160,67,0.3);
+  text-decoration: none;
+  border: 1px solid rgba(46,160,67,0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+#askcpl-nav-home:hover { background: rgba(46,160,67,0.5); }
+body { padding-top: 52px !important; }
+</style>
+
+<div id="askcpl-nav">
+  <button id="nav-prev" onclick="askcplNav(-1)" >&#9664; Prev</button>
+  <a id="askcpl-nav-home" href="index.html#day-997" title="Quay lại danh sách tổng">🏠 Menu</a>
+  <span id="askcpl-nav-title" onclick="askcplToggleToc()" title="Click xem Mục Lục">
+    Day 997 / 2500 &nbsp;&#9660;
+  </span>
+  <button id="nav-next" onclick="askcplNav(1)" >Next &#9654;</button>
+</div>
+
+<div id="askcpl-toc">
+<a class="nav-toc-item" href="day_987.html">Day 987 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_988.html">Day 988 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_989.html">Day 989 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_990.html">Day 990 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_991.html">Day 991 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_992.html">Day 992 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_993.html">Day 993 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_994.html">Day 994 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_995.html">Day 995 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_996.html">Day 996 — Gemini Japan</a>
+<a class="nav-toc-item nav-toc-current" href="day_997.html">Day 997 — Gemini Japan ←</a>
+<a class="nav-toc-item" href="day_998.html">Day 998 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_999.html">Day 999 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_1000.html">Day 1000 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_1001.html">Day 1001 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_1002.html">Day 1002 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_1003.html">Day 1003 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_1004.html">Day 1004 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_1005.html">Day 1005 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_1006.html">Day 1006 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_1007.html">Day 1007 — Gemini Japan</a>
+
+</div>
+
+<script>
+(function() {
+  var CURRENT_DAY = 997;
+  var TOTAL_DAYS = 2500;
+  var tocOpen = false;
+
+  window.askcplNav = function(delta) {
+    var next = CURRENT_DAY + delta;
+    if (next < 1 || next > TOTAL_DAYS) return;
+    window.location.href = 'day_' + next + '.html';
+  };
+
+  window.askcplToggleToc = function() {
+    var toc = document.getElementById('askcpl-toc');
+    tocOpen = !tocOpen;
+    toc.style.display = tocOpen ? 'block' : 'none';
+    if (tocOpen) {
+      var cur = toc.querySelector('.nav-toc-current');
+      if (cur) cur.scrollIntoView({block: 'center'});
+    }
+  };
+
+  document.addEventListener('click', function(e) {
+    var nav = document.getElementById('askcpl-nav');
+    var toc = document.getElementById('askcpl-toc');
+    if (toc && !nav.contains(e.target) && !toc.contains(e.target)) {
+      toc.style.display = 'none';
+      tocOpen = false;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') askcplNav(-1);
+    if (e.key === 'ArrowRight') askcplNav(1);
+    if (e.key === 'Escape') {
+      document.getElementById('askcpl-toc').style.display = 'none';
+      tocOpen = false;
+    }
+  });
+})();
+</script>
+<!-- END-NAV-BAR-V2 -->
 </body>
 </html>

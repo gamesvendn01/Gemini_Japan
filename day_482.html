@@ -32,5 +32,197 @@ tr:nth-child(even) { background: #f5f5f5; }</style>
 (Natsuyasumi ni Hokkaido ryokou no yotei ga arimasu.)
 <i data-path-to-node="9,2,0" data-index-in-node="73">Kỳ nghỉ hè, tôi có kế hoạch đi du lịch Hokkaido.</i></p></li></ol><h2 data-path-to-node="11">⚠️ Lỗi sai phổ biến của người Việt</h2><p data-path-to-node="12">Người học tiếng Nhật thường hay nhầm lẫn giữa <b data-path-to-node="12" data-index-in-node="46"><code data-path-to-node="12" data-index-in-node="46">〜つもりです</code></b> và <b data-path-to-node="12" data-index-in-node="56"><code data-path-to-node="12" data-index-in-node="56">〜予定です</code></b>.</p><ul data-path-to-node="13"><li><p data-path-to-node="13,0,0"><b data-path-to-node="13,0,0" data-index-in-node="0">Lỗi sai:</b> Dùng <code data-path-to-node="13,0,0" data-index-in-node="14">〜予定です</code> cho những quyết định cá nhân mang tính ngẫu hứng hoặc chỉ là ý muốn cá nhân (ví dụ: "Tôi định tối nay sẽ ăn món A" -&gt; dùng <code data-path-to-node="13,0,0" data-index-in-node="143">予定</code> nghe rất trịnh trọng và lạ tai).</p></li><li><p data-path-to-node="13,1,0"><b data-path-to-node="13,1,0" data-index-in-node="0">Cách khắc phục:</b></p><ul data-path-to-node="13,1,1"><li><p data-path-to-node="13,1,1,0,0">Sử dụng <b data-path-to-node="13,1,1,0,0" data-index-in-node="8"><code data-path-to-node="13,1,1,0,0" data-index-in-node="8">つもり</code></b> cho ý chí cá nhân, những thứ chưa chắc chắn hoặc quyết định mang tính cá nhân.</p></li><li><p data-path-to-node="13,1,1,1,0">Sử dụng <b data-path-to-node="13,1,1,1,0" data-index-in-node="8"><code data-path-to-node="13,1,1,1,0" data-index-in-node="8">予定</code></b> cho những lịch trình đã lên sẵn, có tổ chức, hoặc sự việc khách quan (tàu chạy, cuộc họp, lịch làm việc).</p></li></ul></li></ul><h2 data-path-to-node="15">📝 Bài tập thực hành</h2><p data-path-to-node="16">Hãy dịch hoặc chọn đáp án đúng cho các câu sau để củng cố kiến thức nhé!</p><p data-path-to-node="17"><b data-path-to-node="17" data-index-in-node="0">Câu 1: Điền từ thích hợp vào chỗ trống (予定 / つもり)</b></p><blockquote data-path-to-node="18"><p data-path-to-node="18,0">明日、友達と映画を見る_____です。（Đã hẹn lịch trước từ tuần trước)</p></blockquote><p data-path-to-node="19"><b data-path-to-node="19" data-index-in-node="0">Câu 2: Dịch câu sang tiếng Nhật</b></p><blockquote data-path-to-node="20"><p data-path-to-node="20,0">"Theo kế hoạch, tuần sau chúng tôi sẽ chuyển đến nhà mới."</p></blockquote><p data-path-to-node="21"><b data-path-to-node="21" data-index-in-node="0">Câu 3: Sửa lỗi sai (nếu có) trong câu sau và giải thích ngắn gọn</b></p><blockquote data-path-to-node="22"><p data-path-to-node="22,0">"私は将来、医者になる予定です。" (Người nói mới chỉ ước mơ, chưa có lịch trình cụ thể).</p></blockquote><p data-path-to-node="23"><b data-path-to-node="23" data-index-in-node="0">Câu 4: Dịch câu sang tiếng Nhật</b></p><blockquote data-path-to-node="24"><p data-path-to-node="24,0">"Lịch trình là 5 giờ chiều tàu sẽ xuất phát."</p></blockquote><p data-path-to-node="26"><i data-path-to-node="26" data-index-in-node="0">Tôi đang đợi đáp án của bạn để chữa bài chi tiết đây!</i></p></div></div>
   <a class="back" href="index.html">← Quay lại danh sách</a>
+
+
+
+<!-- NAV-BAR-V2 -->
+<style>
+#askcpl-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 48px;
+}
+#askcpl-nav button {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+#askcpl-nav button:hover:not([disabled]) {
+  background: rgba(255,255,255,0.3);
+}
+#askcpl-nav button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+#askcpl-nav-title {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e0d0ff;
+}
+#askcpl-nav-title:hover {
+  background: rgba(255,255,255,0.15);
+}
+#askcpl-toc {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e1e2e;
+  border: 1px solid rgba(167,139,250,0.3);
+  border-radius: 10px;
+  padding: 8px 4px;
+  min-width: 340px;
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 9998;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+#askcpl-toc::-webkit-scrollbar { width: 6px; }
+#askcpl-toc::-webkit-scrollbar-track { background: transparent; }
+#askcpl-toc::-webkit-scrollbar-thumb { background: rgba(167,139,250,0.3); border-radius: 3px; }
+.nav-toc-item {
+  display: block;
+  padding: 7px 16px;
+  color: #a0a0c0;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 1px 4px;
+  font-size: 13px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-toc-item:hover {
+  background: rgba(167,139,250,0.15);
+  color: #e0d0ff;
+}
+.nav-toc-current {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+#askcpl-nav-home {
+  background: rgba(46,160,67,0.3);
+  text-decoration: none;
+  border: 1px solid rgba(46,160,67,0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+#askcpl-nav-home:hover { background: rgba(46,160,67,0.5); }
+body { padding-top: 52px !important; }
+</style>
+
+<div id="askcpl-nav">
+  <button id="nav-prev" onclick="askcplNav(-1)" >&#9664; Prev</button>
+  <a id="askcpl-nav-home" href="index.html#day-482" title="Quay lại danh sách tổng">🏠 Menu</a>
+  <span id="askcpl-nav-title" onclick="askcplToggleToc()" title="Click xem Mục Lục">
+    Day 482 / 2500 &nbsp;&#9660;
+  </span>
+  <button id="nav-next" onclick="askcplNav(1)" >Next &#9654;</button>
+</div>
+
+<div id="askcpl-toc">
+<a class="nav-toc-item" href="day_472.html">Day 472 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_473.html">Day 473 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_474.html">Day 474 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_475.html">Day 475 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_476.html">Day 476 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_477.html">Day 477 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_478.html">Day 478 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_479.html">Day 479 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_480.html">Day 480 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_481.html">Day 481 — Gemini Japan</a>
+<a class="nav-toc-item nav-toc-current" href="day_482.html">Day 482 — Gemini Japan ←</a>
+<a class="nav-toc-item" href="day_483.html">Day 483 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_484.html">Day 484 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_485.html">Day 485 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_486.html">Day 486 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_487.html">Day 487 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_488.html">Day 488 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_489.html">Day 489 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_490.html">Day 490 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_491.html">Day 491 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_492.html">Day 492 — Gemini Japan</a>
+
+</div>
+
+<script>
+(function() {
+  var CURRENT_DAY = 482;
+  var TOTAL_DAYS = 2500;
+  var tocOpen = false;
+
+  window.askcplNav = function(delta) {
+    var next = CURRENT_DAY + delta;
+    if (next < 1 || next > TOTAL_DAYS) return;
+    window.location.href = 'day_' + next + '.html';
+  };
+
+  window.askcplToggleToc = function() {
+    var toc = document.getElementById('askcpl-toc');
+    tocOpen = !tocOpen;
+    toc.style.display = tocOpen ? 'block' : 'none';
+    if (tocOpen) {
+      var cur = toc.querySelector('.nav-toc-current');
+      if (cur) cur.scrollIntoView({block: 'center'});
+    }
+  };
+
+  document.addEventListener('click', function(e) {
+    var nav = document.getElementById('askcpl-nav');
+    var toc = document.getElementById('askcpl-toc');
+    if (toc && !nav.contains(e.target) && !toc.contains(e.target)) {
+      toc.style.display = 'none';
+      tocOpen = false;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') askcplNav(-1);
+    if (e.key === 'ArrowRight') askcplNav(1);
+    if (e.key === 'Escape') {
+      document.getElementById('askcpl-toc').style.display = 'none';
+      tocOpen = false;
+    }
+  });
+})();
+</script>
+<!-- END-NAV-BAR-V2 -->
 </body>
 </html>

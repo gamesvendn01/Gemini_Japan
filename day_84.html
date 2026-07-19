@@ -34,5 +34,197 @@ tr:nth-child(even) { background: #f5f5f5; }</style>
 <i data-path-to-node="8" data-index-in-node="12">(Hai, sou desu.)</i>
 (Vâng, đúng vậy.)</p><h3 data-path-to-node="10">⚠️ Lỗi sai phổ biến của người Việt (Phải lưu ý!)</h3><ol start="1" data-path-to-node="11"><li><p data-path-to-node="11,0,0"><b data-path-to-node="11,0,0" data-index-in-node="0">Phát âm "Trợ từ" quá nặng:</b> Người Việt hay đọc "wa" (は) hay "o" (を) với âm lượng bằng với danh từ. Trong tiếng Nhật, trợ từ là âm đệm, cần đọc nhẹ và lướt hơn.</p></li><li><p data-path-to-node="11,1,0"><b data-path-to-node="11,1,0" data-index-in-node="0">Quên kéo dài trường âm:</b> Ví dụ từ <i data-path-to-node="11,1,0" data-index-in-node="33">Koohii</i> (コーヒー), nhiều bạn đọc thành <i data-path-to-node="11,1,0" data-index-in-node="68">Kôhi</i>. Hãy chú ý kéo dài âm "o" và "i" để nghe chuẩn người bản xứ hơn.</p></li><li><p data-path-to-node="11,2,0"><b data-path-to-node="11,2,0" data-index-in-node="0">Lỗi "Keigo" (Kính ngữ) máy móc:</b> Khi phục vụ nói <i data-path-to-node="11,2,0" data-index-in-node="48">Kashikomarimashita</i> (Tôi đã rõ), người Việt thường cố gắng dịch sang tiếng Việt một cách cứng nhắc. Hãy hiểu đó chỉ là "Vâng ạ" một cách lịch sự nhất.</p></li></ol><h3 data-path-to-node="13">💡 Hướng dẫn Shadowing (Thực hiện ngay)</h3><ol start="1" data-path-to-node="14"><li><p data-path-to-node="14,0,0"><b data-path-to-node="14,0,0" data-index-in-node="0">Lần 1:</b> Đọc nhẩm theo để bắt nhịp.</p></li><li><p data-path-to-node="14,1,0"><b data-path-to-node="14,1,0" data-index-in-node="0">Lần 2:</b> Nghe audio (hoặc tự đọc chậm) và nói đuổi theo sau 0.5 giây.</p></li><li><p data-path-to-node="14,2,0"><b data-path-to-node="14,2,0" data-index-in-node="0">Lần 3 (Quan trọng):</b> Bắt chước biểu cảm, nhấn nhá của người nói.</p></li></ol><h3 data-path-to-node="16">📝 BÀI TẬP THỰC HÀNH (30 phút)</h3><p data-path-to-node="17">Bạn hãy làm 3 phần sau để tôi chấm điểm nhé:</p><p data-path-to-node="18"><b data-path-to-node="18" data-index-in-node="0">1. Điền từ (Trợ từ phù hợp):</b></p><ul data-path-to-node="19"><li><p data-path-to-node="19,0,0">コーヒー ____ 一つ ください。 (Cho tôi một ly cà phê)</p></li><li><p data-path-to-node="19,1,0">これ ____ 食べますか？ (Bạn ăn cái này chứ?)</p></li></ul><p data-path-to-node="20"><b data-path-to-node="20" data-index-in-node="0">2. Dịch Việt - Nhật:</b></p><ul data-path-to-node="21"><li><p data-path-to-node="21,0,0">"Quý khách đã quyết định món chưa ạ?" (Sử dụng cấu trúc <i data-path-to-node="21,0,0" data-index-in-node="56">Okimari desu ka</i>)</p></li></ul><p data-path-to-node="22"><b data-path-to-node="22" data-index-in-node="0">3. Phân tích lỗi (Sửa lỗi sai):</b></p><ul data-path-to-node="23"><li><p data-path-to-node="23,0,0">Người bạn của bạn nói: "Coffee o hitotsu onegaishimasu". Bạn hãy chỉ ra 2 lỗi sai trong cách phát âm của họ dựa trên kiến thức trên.</p></li></ul><p data-path-to-node="25"><i data-path-to-node="25" data-index-in-node="0">Tôi đang chờ câu trả lời từ bạn để sửa lỗi chi tiết! Bạn đã sẵn sàng chưa?</i></p></div></div>
   <a class="back" href="index.html">← Quay lại danh sách</a>
+
+
+
+<!-- NAV-BAR-V2 -->
+<style>
+#askcpl-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 48px;
+}
+#askcpl-nav button {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+#askcpl-nav button:hover:not([disabled]) {
+  background: rgba(255,255,255,0.3);
+}
+#askcpl-nav button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+#askcpl-nav-title {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e0d0ff;
+}
+#askcpl-nav-title:hover {
+  background: rgba(255,255,255,0.15);
+}
+#askcpl-toc {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e1e2e;
+  border: 1px solid rgba(167,139,250,0.3);
+  border-radius: 10px;
+  padding: 8px 4px;
+  min-width: 340px;
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 9998;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+#askcpl-toc::-webkit-scrollbar { width: 6px; }
+#askcpl-toc::-webkit-scrollbar-track { background: transparent; }
+#askcpl-toc::-webkit-scrollbar-thumb { background: rgba(167,139,250,0.3); border-radius: 3px; }
+.nav-toc-item {
+  display: block;
+  padding: 7px 16px;
+  color: #a0a0c0;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 1px 4px;
+  font-size: 13px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-toc-item:hover {
+  background: rgba(167,139,250,0.15);
+  color: #e0d0ff;
+}
+.nav-toc-current {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+#askcpl-nav-home {
+  background: rgba(46,160,67,0.3);
+  text-decoration: none;
+  border: 1px solid rgba(46,160,67,0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+#askcpl-nav-home:hover { background: rgba(46,160,67,0.5); }
+body { padding-top: 52px !important; }
+</style>
+
+<div id="askcpl-nav">
+  <button id="nav-prev" onclick="askcplNav(-1)" >&#9664; Prev</button>
+  <a id="askcpl-nav-home" href="index.html#day-84" title="Quay lại danh sách tổng">🏠 Menu</a>
+  <span id="askcpl-nav-title" onclick="askcplToggleToc()" title="Click xem Mục Lục">
+    Day 84 / 2500 &nbsp;&#9660;
+  </span>
+  <button id="nav-next" onclick="askcplNav(1)" >Next &#9654;</button>
+</div>
+
+<div id="askcpl-toc">
+<a class="nav-toc-item" href="day_74.html">Day 74 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_75.html">Day 75 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_76.html">Day 76 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_77.html">Day 77 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_78.html">Day 78 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_79.html">Day 79 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_80.html">Day 80 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_81.html">Day 81 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_82.html">Day 82 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_83.html">Day 83 — Gemini Japan</a>
+<a class="nav-toc-item nav-toc-current" href="day_84.html">Day 84 — Gemini Japan ←</a>
+<a class="nav-toc-item" href="day_85.html">Day 85 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_86.html">Day 86 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_87.html">Day 87 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_88.html">Day 88 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_89.html">Day 89 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_90.html">Day 90 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_91.html">Day 91 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_92.html">Day 92 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_93.html">Day 93 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_94.html">Day 94 — Gemini Japan</a>
+
+</div>
+
+<script>
+(function() {
+  var CURRENT_DAY = 84;
+  var TOTAL_DAYS = 2500;
+  var tocOpen = false;
+
+  window.askcplNav = function(delta) {
+    var next = CURRENT_DAY + delta;
+    if (next < 1 || next > TOTAL_DAYS) return;
+    window.location.href = 'day_' + next + '.html';
+  };
+
+  window.askcplToggleToc = function() {
+    var toc = document.getElementById('askcpl-toc');
+    tocOpen = !tocOpen;
+    toc.style.display = tocOpen ? 'block' : 'none';
+    if (tocOpen) {
+      var cur = toc.querySelector('.nav-toc-current');
+      if (cur) cur.scrollIntoView({block: 'center'});
+    }
+  };
+
+  document.addEventListener('click', function(e) {
+    var nav = document.getElementById('askcpl-nav');
+    var toc = document.getElementById('askcpl-toc');
+    if (toc && !nav.contains(e.target) && !toc.contains(e.target)) {
+      toc.style.display = 'none';
+      tocOpen = false;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') askcplNav(-1);
+    if (e.key === 'ArrowRight') askcplNav(1);
+    if (e.key === 'Escape') {
+      document.getElementById('askcpl-toc').style.display = 'none';
+      tocOpen = false;
+    }
+  });
+})();
+</script>
+<!-- END-NAV-BAR-V2 -->
 </body>
 </html>

@@ -28,5 +28,197 @@ tr:nth-child(even) { background: #f5f5f5; }</style>
 Người Việt mình hay bị quen tay viết theo thứ tự tiếng Việt. Ví dụ muốn nói "Sách tiếng Nhật", các bạn hay dịch thẳng là <code data-path-to-node="13,0" data-index-in-node="168">教科書の日本語</code> (Sách の Tiếng Nhật).</p><p data-path-to-node="13,1">✔️ <b data-path-to-node="13,1" data-index-in-node="3">Cách khắc phục:</b>
 Hãy luôn nhớ quy tắc <b data-path-to-node="13,1" data-index-in-node="40">"Thằng làm chủ/Thằng lớn đứng trước, thằng bị sở hữu/Thằng nhỏ đứng sau"</b>. Tiếng Nhật luôn bổ nghĩa từ trước ra sau. "Sách thuộc về lĩnh vực tiếng Nhật" <span class="math-inline" data-math="\rightarrow" data-index-in-node="192"><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.3669em;"></span><span class="mrel">→</span></span></span></span></span> <code data-path-to-node="13,1" data-index-in-node="204">日本語の教科書</code>.</p></blockquote><h2 data-path-to-node="15">4. Bài tập thực hành (Day 54)</h2><p data-path-to-node="16">Bạn hãy làm 4 câu bài tập dưới đây bằng cách gõ câu trả lời xuống dưới. Thầy sẽ chấm điểm và sửa chi tiết cho bạn ngay!</p><p data-path-to-node="17"><b data-path-to-node="17" data-index-in-node="0">Phần 1: Dịch các câu sau sang tiếng Nhật (Dùng trợ từ の):</b></p><ul data-path-to-node="18"><li><p data-path-to-node="18,0,0"><b data-path-to-node="18,0,0" data-index-in-node="0">Câu 1:</b> Đây là chiếc điện thoại (スマホ) của bạn tôi.</p></li><li><p data-path-to-node="18,1,0"><b data-path-to-node="18,1,0" data-index-in-node="0">Câu 2:</b> Công ty của anh Tanaka là một công ty máy tính (コンピューターの会社).</p></li></ul><p data-path-to-node="19"><b data-path-to-node="19" data-index-in-node="0">Phần 2: Đọc đoạn văn mẫu ở mục 2 và trả lời câu hỏi bằng tiếng Việt:</b></p><ul data-path-to-node="20"><li><p data-path-to-node="20,0,0"><b data-path-to-node="20,0,0" data-index-in-node="0">Câu 3:</b> Trên bàn của nhân vật "わたし" (tôi) có những đồ vật gì?</p></li><li><p data-path-to-node="20,1,0"><b data-path-to-node="20,1,0" data-index-in-node="0">Câu 4:</b> Chiếc bút màu xanh (青いペン) là của ai?</p></li></ul><p data-path-to-node="22"><b data-path-to-node="22" data-index-in-node="0">Bạn hãy gõ bài làm của mình nhé, thầy chờ để chữa bài cho bạn đây! がんばってください！</b></p></div></div>
   <a class="back" href="index.html">← Quay lại danh sách</a>
+
+
+
+<!-- NAV-BAR-V2 -->
+<style>
+#askcpl-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 8px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 48px;
+}
+#askcpl-nav button {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+#askcpl-nav button:hover:not([disabled]) {
+  background: rgba(255,255,255,0.3);
+}
+#askcpl-nav button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+#askcpl-nav-title {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #e0d0ff;
+}
+#askcpl-nav-title:hover {
+  background: rgba(255,255,255,0.15);
+}
+#askcpl-toc {
+  display: none;
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e1e2e;
+  border: 1px solid rgba(167,139,250,0.3);
+  border-radius: 10px;
+  padding: 8px 4px;
+  min-width: 340px;
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 9998;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+}
+#askcpl-toc::-webkit-scrollbar { width: 6px; }
+#askcpl-toc::-webkit-scrollbar-track { background: transparent; }
+#askcpl-toc::-webkit-scrollbar-thumb { background: rgba(167,139,250,0.3); border-radius: 3px; }
+.nav-toc-item {
+  display: block;
+  padding: 7px 16px;
+  color: #a0a0c0;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 1px 4px;
+  font-size: 13px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-toc-item:hover {
+  background: rgba(167,139,250,0.15);
+  color: #e0d0ff;
+}
+.nav-toc-current {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+#askcpl-nav-home {
+  background: rgba(46,160,67,0.3);
+  text-decoration: none;
+  border: 1px solid rgba(46,160,67,0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+#askcpl-nav-home:hover { background: rgba(46,160,67,0.5); }
+body { padding-top: 52px !important; }
+</style>
+
+<div id="askcpl-nav">
+  <button id="nav-prev" onclick="askcplNav(-1)" >&#9664; Prev</button>
+  <a id="askcpl-nav-home" href="index.html#day-54" title="Quay lại danh sách tổng">🏠 Menu</a>
+  <span id="askcpl-nav-title" onclick="askcplToggleToc()" title="Click xem Mục Lục">
+    Day 54 / 2500 &nbsp;&#9660;
+  </span>
+  <button id="nav-next" onclick="askcplNav(1)" >Next &#9654;</button>
+</div>
+
+<div id="askcpl-toc">
+<a class="nav-toc-item" href="day_44.html">Day 44 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_45.html">Day 45 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_46.html">Day 46 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_47.html">Day 47 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_48.html">Day 48 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_49.html">Day 49 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_50.html">Day 50 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_51.html">Day 51 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_52.html">Day 52 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_53.html">Day 53 — Gemini Japan</a>
+<a class="nav-toc-item nav-toc-current" href="day_54.html">Day 54 — Gemini Japan ←</a>
+<a class="nav-toc-item" href="day_55.html">Day 55 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_56.html">Day 56 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_57.html">Day 57 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_58.html">Day 58 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_59.html">Day 59 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_60.html">Day 60 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_61.html">Day 61 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_62.html">Day 62 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_63.html">Day 63 — Gemini Japan</a>
+<a class="nav-toc-item" href="day_64.html">Day 64 — Gemini Japan</a>
+
+</div>
+
+<script>
+(function() {
+  var CURRENT_DAY = 54;
+  var TOTAL_DAYS = 2500;
+  var tocOpen = false;
+
+  window.askcplNav = function(delta) {
+    var next = CURRENT_DAY + delta;
+    if (next < 1 || next > TOTAL_DAYS) return;
+    window.location.href = 'day_' + next + '.html';
+  };
+
+  window.askcplToggleToc = function() {
+    var toc = document.getElementById('askcpl-toc');
+    tocOpen = !tocOpen;
+    toc.style.display = tocOpen ? 'block' : 'none';
+    if (tocOpen) {
+      var cur = toc.querySelector('.nav-toc-current');
+      if (cur) cur.scrollIntoView({block: 'center'});
+    }
+  };
+
+  document.addEventListener('click', function(e) {
+    var nav = document.getElementById('askcpl-nav');
+    var toc = document.getElementById('askcpl-toc');
+    if (toc && !nav.contains(e.target) && !toc.contains(e.target)) {
+      toc.style.display = 'none';
+      tocOpen = false;
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') askcplNav(-1);
+    if (e.key === 'ArrowRight') askcplNav(1);
+    if (e.key === 'Escape') {
+      document.getElementById('askcpl-toc').style.display = 'none';
+      tocOpen = false;
+    }
+  });
+})();
+</script>
+<!-- END-NAV-BAR-V2 -->
 </body>
 </html>
